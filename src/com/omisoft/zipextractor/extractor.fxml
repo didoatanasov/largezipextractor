@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+
+<VBox fx:controller="com.omisoft.zipextractor.ExtController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox maxWidth="-Infinity" minWidth="-Infinity" maxHeight="-Infinity" minHeight="-Infinity" alignment="CENTER">
+         <children>
+            <TextField disable="true" fx:id="fileToExtract" />
+            <Button onAction="#chooseZipFile"  text="Choose file to extract" />
+         </children>
+      </HBox>
+      <HBox maxWidth="-Infinity" minWidth="-Infinity" maxHeight="-Infinity" minHeight="-Infinity" alignment="CENTER">
+         <children>
+            <TextField disable="true" fx:id="directoryToExtractTo" />
+            <Button  text="Choose directory" onAction="#chooseDirectoryAction"/>
+         </children>
+      </HBox>
+      <Button  centerShape="true" id="button_extract" mnemonicParsing="false" text="Extract" onAction="#extractFiles" textAlignment="CENTER" underline="true" />
+   </children>
+</VBox>
